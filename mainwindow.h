@@ -21,6 +21,7 @@ class QMenu;
 class QTextEdit;
 QT_END_NAMESPACE
 
+class CodeEditor;
 
 class MainWindow : public QMainWindow{
 
@@ -60,7 +61,7 @@ class MainWindow : public QMainWindow{
 
         QMenu* viewMenu;
         QTextEdit *textEditor;
-
+        CodeEditor *codeEditor;
 };
 
 

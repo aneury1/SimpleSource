@@ -1,3 +1,5 @@
+
+#if 0
 #include "highligher.h"
 
 
@@ -105,3 +107,4 @@ void Highlighter::highlightBlock(const QString &text)
         startIndex = text.indexOf(commentStartExpression, startIndex + commentLength);
     }
 }
+#endif

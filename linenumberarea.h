@@ -11,7 +11,7 @@ public:
 
     QSize sizeHint() const override
     {
-        return QSize(codeEditor->lineNumberAreaWidth()+48, 0);
+        return QSize(codeEditor->lineNumberAreaWidth(), 0);
     }
 
 protected:

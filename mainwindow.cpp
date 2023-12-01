@@ -1,10 +1,11 @@
 #include "mainwindow.h"
 #include <QtWidgets>
+#include "codeeditor.h"
 
-
-MainWindow::MainWindow(): textEditor(new QTextEdit)
+MainWindow::MainWindow(): textEditor(new QTextEdit), codeEditor(new CodeEditor(this))
 {
-    setCentralWidget(textEditor);
+
+    setCentralWidget(codeEditor);
     createActions();
     createDockWindow();
     createStatusBar();
@@ -22,7 +23,7 @@ void MainWindow::about()
 
 void MainWindow::createStatusBar()
 {
-    statusBar()->showMessage(tr("Simple Text editor"));
+    statusBar()->showMessage(tr("Simple Text editor"), -1);
 }
 
 void MainWindow::createDockWindow()

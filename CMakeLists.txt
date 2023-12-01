@@ -34,8 +34,8 @@ else()
     else()
         add_executable(SimpleEditor
             ${PROJECT_SOURCES}
-           # linenumberarea.h linenumberarea.cpp
-           # codeeditor.h codeeditor.cpp
+            linenumberarea.h linenumberarea.cpp
+            codeeditor.h codeeditor.cpp
             mainwindow.h mainwindow.cpp
            # highligher.h highligher.cpp
         )

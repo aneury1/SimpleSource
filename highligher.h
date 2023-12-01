@@ -1,6 +1,6 @@
 #ifndef HIGHLIGHER_H
 #define HIGHLIGHER_H
-
+#if 0
 #include <QSyntaxHighlighter>
 #include <QTextCharFormat>
 #include <QRegularExpression>
@@ -40,3 +40,4 @@ private:
 };
 //! [0]
 #endif // HIGHLIGHER_H
+#endif

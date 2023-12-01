@@ -120,7 +120,7 @@ void CodeEditor::lineNumberAreaPaintEvent(QPaintEvent *event)
             QString number = QString::number(blockNumber + 1);
             painter.setPen(Qt::black);
             if(blockNumber == block.lineCount()){
-                painter.setFont(QFont("Verdana", 12, QFont::ExtraBold));
+            ////    painter.setFont(QFont("Verdana", 12, QFont::ExtraBold));
             }
             painter.drawText(0, top, lineNumberArea->width(), fontMetrics().height(),
                              Qt::AlignRight, number);
