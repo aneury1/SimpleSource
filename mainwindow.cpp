@@ -22,7 +22,7 @@ void MainWindow::about()
 
 void MainWindow::createStatusBar()
 {
-
+    statusBar()->showMessage(tr("Simple Text editor"));
 }
 
 void MainWindow::createDockWindow()
@@ -48,16 +48,13 @@ void MainWindow::createActions()
     toolsMenu= menuBar()->addMenu(tr("Tools"));
     viewsMenu= menuBar()->addMenu(tr("Views"));
     windowMenu= menuBar()->addMenu(tr("Window"));
+    actionMenu = menuBar()->addMenu(tr("Actions"));
     helpMenu= menuBar()->addMenu(tr("Help"));
     customMenu= menuBar()->addMenu(tr("Custom Menu"));
 
 
+    QToolBar *toolbar = addToolBar(tr("simple toolbar"));
 
-
-
-
-
-    // QToolBar *toolbar = addToolBar(tr("simple toolbar"));
 
     QAction *aboutAction = helpMenu->addAction(tr("About"), this, &MainWindow::about);
     aboutAction->setStatusTip(tr("Show the about box"));

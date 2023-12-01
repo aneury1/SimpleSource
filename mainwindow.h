@@ -54,6 +54,7 @@ class MainWindow : public QMainWindow{
         QMenu *toolsMenu;
         QMenu *viewsMenu;
         QMenu *windowMenu;
+        QMenu *actionMenu;
         QMenu *helpMenu;
         QMenu *customMenu;
 
