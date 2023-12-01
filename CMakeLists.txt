@@ -37,6 +37,8 @@ else()
             linenumberarea.h linenumberarea.cpp
             codeeditor.h codeeditor.cpp
             mainwindow.h mainwindow.cpp
+            .gitignore
+            token.exe
            # highligher.h highligher.cpp
         )
     endif()
